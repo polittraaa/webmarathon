@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Superhero application</title>
+	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>Superhero Form</h1>
+	<form>
+    <fieldset>
+      <legend>About the Superhero</legend>
+      <p>
+        <span>Real Name</span>
+        <input type="text" name="realName" placeholder="Superhero real name"  size="15" autofocus>
+        <span>Superhero Name</span>
+        <input type="text" name="supname" placeholder="Superhero alias"  size="15">
+        <span>Age</span>
+        <input type="number" name="age" min="1" max="999" step="1">
+        <br><br>
+        <span >About</span>
+        <textarea name="about"  cols="70" rows="5" maxlength="500"  placeholder="Information about superhero, max 500 symbols"></textarea>
+      </p>
+      <p>
+        <span>Photo:</span>
+        <input type="file" name="photo">
+      </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Powers</legend>
+        <p>
+          <label><input type="checkbox" name="telekinesis"> <span>Telekinesis</span></label>
+          <label><input type="checkbox" name="superstrenght"> <span>Super strenght or speed</span></label>
+          <label><input type="checkbox" name="Shapeshifting"> <span>Shapeshifting</span></label>
+          <label><input type="checkbox" name="Flight"> <span>Flight</span></label>
+          <label><input type="checkbox" name="Elemental control"> <span>Elemental control</span></label>
+          <label><input type="checkbox" name="Other"> <span>Other</span></label>
+        </p>
+        <p>
+          <span>Level of control:</span>
+          <input type="range" name="levelcontrol" min="0" max="10" step="1" value="1">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Origin of Powers</legend>
+        <p>
+          <label><input type="radio" name="radiogroup"> <span>Unknown</span></label>
+          <label><input type="radio" name="radiogroup"> <span>Freak lab accident</span></label>
+          <label><input type="radio" name="radiogroup"> <span>Chosen by an ancient wise being</span></label>
+          <label><input type="radio" name="radiogroup"> <span>The superhero is not human</span></label>
+          <label><input type="radio" name="radiogroup"> <span>Other</span></label>
+        </p>
+      </fieldset>
+
+      <p>
+      <button type="reset">CLEAR</button>
+      <button type="submit">SEND</button>
+      </p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+#rainbow-block{
+  height:100px;
+  width: 100%;
+  background: linear-gradient(111deg, 
+  rgba(255,0,0,1) 0%,
+  rgba(255,214,0,1) 20%,
+  rgba(30,231,46,1) 40%,
+  rgba(0,235,225,1) 60%, 
+  rgba(5,0,255,1) 80%, 
+  rgba(245,3,240,1) 100%);
+}
+
+#horn-block{  
+  width: 0;
+	height: 0;
+  border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 130px solid  silver;
+  margin-left: 100px;
+  margin-top: -40px;
+}

@@ -1,0 +1,14 @@
+h1 {
+  text-align: center;
+  background-color:  #eb3223;
+  height: 4em;
+}
+
+span {
+  display: inline-block;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 4em;
+  color: white;
+  padding: 10px;
+}

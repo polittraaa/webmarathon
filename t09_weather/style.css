@@ -1,0 +1,28 @@
+.conteiner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.day{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin: 2px;
+}
+.day:hover{
+  box-shadow: 
+  0 1px 10px 4px rgba(0, 0, 0, 0.5)
+}
+.deg{
+  font-size: 2em;
+  font-weight: 400;
+}
+.date{
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: 700;
+  background-color: #3a95b3 ;
+  color: white;
+}
