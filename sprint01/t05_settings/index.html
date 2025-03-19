@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="utf-8">
+ <title>Settings</title>
+ <meta name="description" content="t05. Settings">
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Settings</h1>
+  <div class="background">
+    <div class="container">
+      <div class="left">
+        <p>Typeface</p>
+        <div class="combobox">
+          <select id="j" name="combobox">
+            <option value="Acunim Pro">Acunim Pro</option>
+            <option value="Comic Sans">Comic Sans</option>
+            <option value="Times New Roman" disabled>Times New Roman</option>
+          </select>
+        </div>
+
+        <p>Weight</p>
+        <div class="weightbox">
+          <input type="checkbox" id="regular">
+			    <label for="regular">Regular</label>
+          <input type="checkbox" id="bold">
+          <label for="bold">Bold</label>
+        </div>
+        
+        <p>Size</p>
+        <div class="range">
+          <input type="range" name="size" id="size" min="5" max="20" step="1">
+        </div>
+        <div class="level">
+            <span class="small">A</span>
+            <span class="big">A</span>
+        </div>
+      </div>
+
+      <div class="rigth">
+        <div class="switch">
+          <lable class="d">Dark UI</lable>
+          <input type="checkbox" name="dark-ui" id="toggle" checked>
+        </div>
+        <p>Color</p>
+        <div class="color-box">
+          <input type="checkbox" class="color-scheme blue" name="blue" aria-label="color">
+          <input type="checkbox" class="color-scheme green" name="green" aria-label="color">
+          <input type="checkbox" class="color-scheme pink" name="pink" aria-label="color">
+          <input type="checkbox" class="color-scheme yellow" name="yellow" aria-label="color">
+          <input type="checkbox" class="color-scheme orange" name="orange" aria-label="color"> 
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <img src="assets/images/artistic-brush.png" alt="brush">
+      <img src="assets/images/user-icon.png" alt="user-icon">
+      <img src="assets/images/sms-speech-bubble.png" alt="sms-speech-bubble">
+      <img src="assets/images/computer-screen.png" alt="screen">
+    </div>
+  </div>
+</body>
+
+
+</html>

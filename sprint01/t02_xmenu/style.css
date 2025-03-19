@@ -1,0 +1,99 @@
+body{
+  font-size: 18px;
+}
+h1{
+  background-color:darkslategray;
+  color: hotpink;
+  text-align:center
+}
+a{
+  text-align: center;
+  color: rgb(74, 0, 37);
+}
+span{
+  display: inline-flex;
+  width: 210px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+span:hover{
+  background-color: magenta
+}
+
+.slay_queen, .slay_enemies{
+  background-color: magenta;
+}
+.dropdown{
+  display: flex;
+  justify-content: center;
+}
+.level1{
+  position: relative;
+  display: inline-block;
+  margin-inline: 10px;
+}
+.level2{
+  display: none;
+  position: absolute;
+  background-color:cadetblue;
+}
+
+.level2E{
+  display:none;
+  position: absolute;
+}
+.level3{
+  display:none;
+  position: absolute;
+}
+
+.level1:hover .level2{
+  display: flex;
+  flex-direction: column;
+}
+.level1E:hover .level2{
+  display: flex;
+  flex-direction: column;
+}
+
+.level3{
+  display:none;
+  background-color:rgb(114, 167, 180);
+}
+
+.how-to-slay .level3 {
+  display: none;
+  position: absolute;
+  top: 36%;
+  right: 100%;
+}
+.neils .level3{
+  display: none;
+  position: absolute;
+  top: 66%;
+  right: 100%;
+}
+
+.howtoslay2 .level3 {
+  display: none;
+  position: absolute;
+  top: 66%;
+  left: 100%;
+}
+
+.how-to-slay:hover .level3,  .neils:hover .level3{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.howtoslay2:hover .level3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.level2E:hover .howtoslay2 {
+  display: flex;
+  flex-direction: column;
+}

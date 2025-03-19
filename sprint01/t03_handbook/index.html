@@ -1,0 +1,205 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Handbook</title>
+    <meta name="description" content="t03. t03_handbook">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h1>Handbook</h1>
+    <h2>HTML</h2>
+
+    <div class="container">
+      <div class="block">
+        <h3>br</h3>
+        <p>This tag represents a line break. It's an inline element, and does not need a closing tag.<br>
+        We use it to create a new line inside a p tag, without creating a new paragraph.<br>
+        And compared to creating a new paragraph, it does not add additional spacing.</p>
+        <code>&lt;Some text&lt;br&gt;A new line&gt;</code>
+        <p>Some text<br>A new line</p>
+      </div>
+      
+      <div class="block">
+        <h3>lists</h3>
+        <p>We have 3 types of lists:</p>
+        <ul><li>unordered lists</li></ul>
+        <ol><li>ordered lists</li></ol>
+        <dl>
+          <dt>definition</dt>
+          <dd>lists</dd>
+        </dl>
+        
+        <p>Unordered lists are created using the <code>ul</code> tag. Each item in the list is created with the <code>li</code> tag:</p>
+        <code>
+          &lt;ul&gt;
+            &lt;li&gt;First&lt;/li&gt;
+            &lt;li&gt;Second&lt;/li&gt;
+          &lt;/ul&gt;
+        </code>
+
+        <p>Ordered lists are similar, just made with the <code>ol</code> tag:</p>
+        <code>
+          &lt;ol&gt;
+            &lt;li&gt;First&lt;/li&gt;
+            &lt;li&gt;Second&lt;/li&gt;
+          &lt;/ol&gt;
+        </code>
+      </div>
+      
+      <div class="block">
+        <h3>input</h3>
+        <p>The input field is one of the most widely used form elements. It's also a very versatile element, and it can completely change behavior based on the type attribute.</p>
+        <code>&lt;input type="password" name="password" placeholder="Your password"&gt;</code>
+        <input type="password" name="password" placeholder="Your password">
+      </div>
+      
+      <div class="block">
+        <h3>button</h3>
+        <p>The <code>button</code> tag is used to create clickable buttons. It can contain text or images and supports various types like submit, reset, and button.</p>
+        <code>
+          &lt;button type="button"&gt;Click me&lt;/button&gt;
+        </code>
+        <p>Example:</p>
+        <button type="button">Click me</button>
+      </div>
+      
+      <div class="block">
+        <h3>links</h3>
+        <p>Links are defined using the <code>a</code> tag. The link destination is set via its <code>href</code> attribute.</p>
+        <code>&lt;a href="https://flaviocopes.com"&gt;click here&lt;/a&gt;</code>
+        <p><a href="https://flaviocopes.com">click here</a></p>
+      </div>
+      
+      <div class="block">
+        <h3>Radio buttons</h3>
+        <p>Radio buttons allow the user to select one option from a group. They are created using the <code>input</code> tag with the type attribute set to "radio".</p>
+        <code>
+          &lt;input type="radio" name="color" value="yellow"&gt; Yellow
+          &lt;input type="radio" name="color" value="red"&gt; Red
+          &lt;input type="radio" name="color" value="blue"&gt; Blue
+        </code>
+        <p>Example:</p>
+        <label><input type="radio" name="color" value="yellow"> Yellow</label>
+        <label><input type="radio" name="color" value="red"> Red</label>
+        <label><input type="radio" name="color" value="blue"> Blue</label>
+      </div>
+      
+      <div class="block">
+        <h3>Code block</h3>
+        <p>The <code>code</code> tag is used to display preformatted text that represents computer code. To maintain formatting, the <code>pre</code> tag can be used around it.</p>
+        <code>
+          &lt;pre&gt;
+            &lt;code&gt;
+              console.log("Hello, world!");
+            &lt;/code&gt;
+          &lt;/pre&gt;
+        </code>
+        <p>Example:</p>
+        <pre>
+          <code>
+            console.log("Hello, world!");
+          </code>
+        </pre>
+      </div>
+    </div>
+
+		<h2>CSS</h2>
+    <div class="container">
+			<div class="block">
+				<h3>background</h3>
+				<p>specifies the background of an element</p>
+				<code>background: [];</code>
+				<p class="example-background">example</p>
+			</div>
+
+			<div class="block">
+				<h3>opacity</h3>
+				<p>specifies the opacity/transparency of an
+					element</p>
+				<code>opacity: 0.8;</code> <br><br>
+				<div class="example-opacity1"></div>
+				<div class="example-opacity2"></div>
+				<div class="example-opacity3"></div>
+				<div class="example-opacity4"></div>
+				<div class="example-opacity5"></div>
+			</div>
+
+			<div class="block">
+				<h3>line-height</h3>
+				<p>specifies the height of a line</p>
+				<code>line-height: 1.5;</code>
+				<p class="example-line-height">Lorem ipsum dolor</p>
+				<p class="example-line-height">Lorem ipsum dolor</p>
+			</div>
+
+			<div class="block">
+				<h3>text-transform</h3>
+				<p>controls the capitalization of text</p>
+				<code>text-transform: uppercase;</code>
+				<p class="example-text-transform"><span>Lorem</span> ipsum <span>dolor</span> <span>sit</span> amet consectetur <span>nadipisicing</span> elit.</p>
+			</div>
+
+			<div class="block">
+				<h3>border</h3>
+				<p>specifies the style of the outline</p>
+				<code>border-bottom: 2px solid #666;</code><br><br>
+				<div class="example-border"></div>
+			</div>
+
+			<div class="block">
+				<h3>font-size</h3>
+				<p>specifies the font size of the item.
+					%,px,rem,inherit</p>
+				<code>font-size:24px;</code><br><br>
+				<p class="example-font-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores debitis et ipsam.</p>
+			</div>
+		</div>
+
+
+		<h2>PROTOCOLS</h2>
+    <div class="container2">
+			<div class="block">
+				<h3>HTTP methods</h3>
+				<p>GET - use this type of requests to retrieve resource
+					representation/information only - and not to modify it in any way</p>
+					<p>POST - used to create a new resource into the collection of resources</p>
+					<p>PUT - use it primarily to update existing resource (if the resource does not exist then API may decide to create a new resource or not)</p>
+					<p>DELETE - used to delete resources (identified by the Request-URI)</p>
+					<p>PATCH - HTTP PATCH requests are to make partial update on a resource</p>
+			</div>
+			<div class="block">
+				<h3>HTTP status code</h3>
+				<p>1xx: Informational example: 100 Continue</p>
+				<p>2xx: Success example: 201 Created</p>
+				<p>3xx: Redirection example: 301 Moved Permanently</p>
+				<p>4xx: Client Error example: 404 Not Found</p>
+				<p>5xx: Server Error example: 500 Internal Server Error</p>
+			</div>
+			<div class="block">
+				<h3>DNS list by types</h3>
+				<p>A - (address record) - specifies IP address (IPv4) for given host. A records are used for conversion of domain names to corresponding IP addresses</p>
+				<p>AAAA (IPv6 address record) - specifies IPv6 address for given host. So it works the same way as the A record and the difference is the type of IP address</p>
+				<p>CNAME (canonical name record) - specifies a domain name that has to be queried in order to resolve the original DNS query. Therefore CNAME records are used for creating aliases of domain names. CNAME records are truly useful when we want to alias our domain to an external domain. In other cases we can remove CNAME records and replace them with A records and even decrease performance overhead</p>
+				<p>HINFO (Host Information records) - used to acquire general	information about a host. The record specifies type of CPU and OS. The HINFO record data provides the possibility to use
+ operating system specific protocols when two hosts want to communicate. For security reasons the HINFO records are not	typically used on public servers</p>
+				<p>ISDN (Integrated Services Digital Network records) - specifies	ISDN address for a host. An ISDN address is a telephone number that consists of a country code, a national destination code, a ISDN Subscriber number and, optionally, a ISDN subaddress. The function of the record is only variation of the A resource record function</p>
+			</div>
+			<div class="block">
+				<h3>Identifying google's IP</h3>
+				<p>To identify google.com IP, follow the next steps:
+					<ol>
+						<li>open Terminal</li>
+						<li>paste and run the command nslookup google.com</li>
+					</ol>
+				</p>
+				<p>As result, you will receive "name" and "address":
+					Name: google.com.ua
+					Address: 216.58.215.99
+					Repeat steps 1 and 2 to identify google.com.ua IP</p>
+			</div>
+		</div>
+  </body>
+</html>

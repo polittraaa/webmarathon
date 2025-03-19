@@ -1,0 +1,126 @@
+body{
+  background-color: #f3d250;
+  justify-content: center;
+}
+h1, h2{
+  text-align: center;
+}
+.container{
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 350px 350px 350px;
+  justify-content: center;
+}
+
+.container2{
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  grid-template-columns: 500px 500px;
+}
+
+.block{
+  background-color: #ececec;
+  padding: 10px;
+  margin: 10px;
+} 
+
+.example-background{
+  background-color: blue;
+  height: 100px;
+}
+
+.example-opacity1 {
+  width: 50px;
+  height: 30px;
+  background-color: green;
+  opacity: 1;
+}
+
+.example-opacity2 {
+  width: 50px;
+  height: 30px;
+  background-color: green;
+  opacity: 0.8;
+}
+
+.example-opacity3 {
+  width: 50px;
+  height: 30px;
+  background-color: green;
+  opacity: 0.5;
+}
+
+.example-opacity4 {
+  width: 50px;
+  height: 30px;
+  background-color: green;
+  opacity: 0.3;
+}
+
+.example-opacity5 {
+  width: 50px;
+  height: 30px;
+  background-color: green;
+  opacity: 0;
+}
+
+.example-line-height {
+  line-height: 1.5;
+}
+
+.example-text-transform span {
+  text-transform: uppercase;
+}
+
+.example-border {
+  background-color: gray;
+  width: 100px;
+  height: 70px;
+  border-bottom: 4px solid red;
+}
+
+.example-font-size {
+  font-size: 24px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns:  350px 350px 350px;
+  }
+  .container2{
+    display: grid;
+    gap:30px;
+    grid-template-columns:  500px 500px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns:  350px 350px;
+  }
+  .container2{
+    display: grid;
+    gap:30px;
+    grid-template-columns:  500px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 250px;
+  }
+  .container2{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 250px;
+
+  }
+}

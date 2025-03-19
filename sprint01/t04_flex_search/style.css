@@ -1,0 +1,27 @@
+.uppercase-text {
+  text-transform: uppercase;
+}
+h1{
+  text-align: center;
+}
+.search-container {
+  display: flex;
+  align-content:stretch;
+}
+button{
+  color: green;
+  white-space: nowrap;
+}
+button:hover{
+  color:red;
+}
+input[type="text"]{
+  border: 2px solid mediumblue;
+  color: green;
+  height: 2em;
+  padding:0 10px;
+  flex-grow: 1;
+}
+input[type="text"]:hover{
+  color: red; 
+} 

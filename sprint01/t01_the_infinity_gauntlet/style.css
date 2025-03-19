@@ -1,0 +1,13 @@
+.man{
+  width:50px;
+
+}
+.gauntlet{
+  width:100px;
+}
+.gauntlet:hover ~ .row:nth-child(even) .man.odd{
+  visibility: hidden;
+}
+.gauntlet:hover ~ .row:nth-child(odd) .man.even{
+  visibility: hidden;
+}
